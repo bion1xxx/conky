@@ -77,8 +77,6 @@ ${execi 30 hddtemp /dev/sdb | awk '{print $4}'} /dev/sdb $alignr $color2 ${diski
 ${diskiograph /dev/sdb 3f2951 c684ff scale}
 / $alignr${fs_used /} ${fs_bar 7,119 /}
 /home $alignr${fs_used /home} ${fs_bar 7,119 /home}
-#../data1 $alignr${fs_used /mnt/data1/} ${fs_bar 7,119 /mnt/data1/}
-#../data2 $alignr${fs_used /media/bion1xxx/data2/} ${fs_bar 7,119 /media/bion1xxx/data2/}
 /var/log $alignr${fs_used /var/log/} ${fs_bar 7,119 /var/log/}
 ../apt $alignr${fs_used /var/cache/apt/archives} ${fs_bar 7,119 /var/cache/apt/archives}
 /var/tmp $alignr${fs_used /tmp} ${fs_bar 7,119 /tmp/}
